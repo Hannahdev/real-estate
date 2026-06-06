@@ -1,0 +1,35 @@
+@import "tailwindcss";
+
+:root {
+  --font-heading: var(--font-cormorant), serif;
+  --font-body: var(--font-inter), sans-serif;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-body);
+}
+
+.font-heading {
+  font-family: var(--font-heading);
+}
+
+@keyframes scroll-line {
+  0% { transform: translateY(-100%); }
+  80% { transform: translateY(200%); }
+  100% { transform: translateY(200%); }
+}
+
+.animate-scroll-line {
+  animation: scroll-line 2.5s cubic-bezier(0.16, 1, 0.3, 1) infinite;
+}
